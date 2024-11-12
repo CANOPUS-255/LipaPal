@@ -1,0 +1,6 @@
+@LipaPal_WebApp_HostAddress = http://localhost:5147
+
+GET {{LipaPal_WebApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

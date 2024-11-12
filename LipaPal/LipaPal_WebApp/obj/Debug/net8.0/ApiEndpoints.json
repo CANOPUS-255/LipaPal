@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "LipaPal_WebApp.Controllers.UsersController",
+    "Method": "CompleteKYC",
+    "RelativePath": "api/Users/kyc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personalDetails",
+        "Type": "LipaPal_WebApp.Models.PersonalDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LipaPal_WebApp.Controllers.UsersController",
+    "Method": "Register",
+    "RelativePath": "api/Users/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "LipaPal_WebApp.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
