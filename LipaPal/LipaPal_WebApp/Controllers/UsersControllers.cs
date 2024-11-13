@@ -3,7 +3,7 @@ using Npgsql;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using LipaPal_WebApp.Models;  // Add this to import the User class
+using LipaPal_WebApp.Models;
 
 namespace LipaPal_WebApp.Controllers
 {
@@ -31,22 +31,21 @@ namespace LipaPal_WebApp.Controllers
         }
 
         [HttpPost("kyc")]
-        public IActionResult CompleteKYC([FromBody] PersonalDetails personalDetails)
+        public IActionResult CompleteKYC([FromBody] KYCRequest kycRequest)
         {
-            if (IsPhoneNumberTaken(personalDetails.PhoneNumber) ||
-                IsBankAccountTaken(personalDetails.BankAccount) ||
-                IsDocumentNumberTaken(personalDetails.DocumentNumber))
+            if (IsPhoneNumberTaken(kycRequest.PersonalDetails.PhoneNumber) ||
+                IsBankAccountTaken(kycRequest.PersonalDetails.BankAccount) ||
+                IsDocumentNumberTaken(kycRequest.PersonalDetails.DocumentNumber))
             {
                 return BadRequest("Some details are already registered.");
             }
 
-            if (SaveKYCToDatabase(personalDetails))
+            if (SaveKYCToDatabase(kycRequest.PersonalDetails, kycRequest.UserNames))
                 return Ok("KYC Verification Process is successful!");
 
             return StatusCode(500, "Error during KYC verification.");
         }
 
-        // Helper methods for database operations
         private bool SaveUserToDatabase(User user, byte[] passwordHash)
         {
             try
@@ -69,25 +68,39 @@ namespace LipaPal_WebApp.Controllers
             }
         }
 
-        private bool SaveKYCToDatabase(PersonalDetails personalDetails)
+        private bool SaveKYCToDatabase(PersonalDetails personalDetails, UserNames userNames)
         {
             try
             {
                 using var connection = new NpgsqlConnection(_connectionString);
                 connection.Open();
 
-                string query = @"
-                    INSERT INTO personaldetail (user_id, phone_number, bank_account, document_type, document_number)
-                    VALUES (@user_id, @phone_number, @bank_account, @document_type, @document_number)";
+                string query1 = @"
+                    INSERT INTO personaldetail (user_id, phone_number, bank_account, document_type, document_number, profile_photo, is_verified)
+                    VALUES (@user_id, @phone_number, @bank_account, @document_type, @document_number, @profile_photo, @is_verified) RETURNING kyc_id";
 
-                using var cmd = new NpgsqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("user_id", personalDetails.UserId);
-                cmd.Parameters.AddWithValue("phone_number", personalDetails.PhoneNumber);
-                cmd.Parameters.AddWithValue("bank_account", personalDetails.BankAccount);
-                cmd.Parameters.AddWithValue("document_type", personalDetails.DocumentType);
-                cmd.Parameters.AddWithValue("document_number", personalDetails.DocumentNumber);
+                using var cmd1 = new NpgsqlCommand(query1, connection);
+                cmd1.Parameters.AddWithValue("user_id", personalDetails.UserId);
+                cmd1.Parameters.AddWithValue("phone_number", personalDetails.PhoneNumber);
+                cmd1.Parameters.AddWithValue("bank_account", personalDetails.BankAccount);
+                cmd1.Parameters.AddWithValue("document_type", personalDetails.DocumentType);
+                cmd1.Parameters.AddWithValue("document_number", personalDetails.DocumentNumber);
+                cmd1.Parameters.AddWithValue("profile_photo", personalDetails.ProfilePhoto);
+                cmd1.Parameters.AddWithValue("is_verified", personalDetails.IsVerified);
+                int kycId = (int)cmd1.ExecuteScalar(); // Get the generated kyc_id
 
-                cmd.ExecuteNonQuery();
+                string query2 = @"
+                    INSERT INTO usernames (kyc_id, user_id, first_name, middle_name, last_name)
+                    VALUES (@kyc_id, @user_id, @first_name, @middle_name, @last_name)";
+
+                using var cmd2 = new NpgsqlCommand(query2, connection);
+                cmd2.Parameters.AddWithValue("kyc_id", kycId);
+                cmd2.Parameters.AddWithValue("user_id", userNames.UserId);
+                cmd2.Parameters.AddWithValue("first_name", userNames.FirstName);
+                cmd2.Parameters.AddWithValue("middle_name", userNames.MiddleName);
+                cmd2.Parameters.AddWithValue("last_name", userNames.LastName);
+
+                cmd2.ExecuteNonQuery(); // Execute the second insert command
                 return true;
             }
             catch
@@ -122,5 +135,11 @@ namespace LipaPal_WebApp.Controllers
 
         private bool IsValidUsername(string username) => username.Length > 2;
         private bool IsValidEmail(string email) => Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+    }
+
+    public class KYCRequest
+    {
+        public PersonalDetails PersonalDetails { get; set; }
+        public UserNames UserNames { get; set; }
     }
 }

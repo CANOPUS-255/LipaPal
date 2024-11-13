@@ -15,6 +15,8 @@ namespace LipaPal_WebApp.Models
         public string BankAccount { get; set; }
         public string DocumentType { get; set; }
         public string DocumentNumber { get; set; }
+        public string ProfilePhoto { get; set; }
+        public bool IsVerified { get; set; }    
     }
 }
 

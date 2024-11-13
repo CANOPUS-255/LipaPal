@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LipaPal_WebApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LipaPal_WebApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LipaPal_WebApp\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\models\\KYC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LipaPal_WebApp\\models\\KYC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\models\\LoginRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LipaPal_WebApp\\models\\LoginRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KYC.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\models\\KYC.cs",
+              "RelativeDocumentMoniker": "LipaPal_WebApp\\models\\KYC.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\models\\KYC.cs",
+              "RelativeToolTip": "LipaPal_WebApp\\models\\KYC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T11:30:22.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "LipaPal_WebApp\\models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\models\\LoginRequest.cs",
+              "RelativeToolTip": "LipaPal_WebApp\\models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T11:28:46.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "LipaPal_WebApp\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "LipaPal_WebApp\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T11:26:36.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\Program.cs",
+              "RelativeDocumentMoniker": "LipaPal_WebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\Program.cs",
+              "RelativeToolTip": "LipaPal_WebApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T11:08:00.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "LipaPal_WebApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal_WebApp\\appsettings.json",
+              "RelativeToolTip": "LipaPal_WebApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-12T11:04:45.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T09:08:14.069Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
