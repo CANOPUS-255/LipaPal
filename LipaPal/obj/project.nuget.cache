@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NUiPrY7KCys=",
+  "dgSpecHash": "yCIIM6XMMOY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\PaymentApp\\PaymentApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\MY PC\\Documents\\GitHub\\LipaPal\\LipaPal\\LipaPal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MY PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\MY PC\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\MY PC\\.nuget\\packages\\npgsql\\8.0.5\\npgsql.8.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
